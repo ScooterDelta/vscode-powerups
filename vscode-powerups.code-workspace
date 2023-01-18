@@ -13,5 +13,7 @@
       "path": "worker"
     }
   ],
-  "settings": {}
+  "settings": {
+    "jest.disabledWorkspaceFolders": ["worker", "server", "vscode-powerups"]
+  }
 }
