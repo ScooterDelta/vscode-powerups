@@ -12,7 +12,7 @@ services:
       - mongodata:/data/db
 
   rabbitmq:
-    image: mongo
+    image: rabbitmq
     restart: always
     environment:
       RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
