@@ -7,9 +7,6 @@
       "path": "ui"
     },
     {
-      "path": "server"
-    },
-    {
       "path": "worker"
     }
   ],
@@ -19,7 +16,7 @@
       "source.fixAll": true,
       "source.fixAll.markdownlint": false
     },
-    "jest.disabledWorkspaceFolders": ["worker", "server", "vscode-powerups"],
+    "jest.disabledWorkspaceFolders": ["worker", "vscode-powerups"],
     "omnisharp.useModernNet": true,
     "[csharp]": {
       "editor.defaultFormatter": "ms-dotnettools.csharp"
