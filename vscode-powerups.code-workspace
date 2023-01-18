@@ -14,6 +14,32 @@
     }
   ],
   "settings": {
-    "jest.disabledWorkspaceFolders": ["worker", "server", "vscode-powerups"]
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true,
+      "source.fixAll.markdownlint": false
+    },
+    "jest.disabledWorkspaceFolders": ["worker", "server", "vscode-powerups"],
+    "omnisharp.useModernNet": true,
+    "[csharp]": {
+      "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[sql]": {
+      "editor.defaultFormatter": "ms-mssql.mssql"
+    },
+    "[xml]": {
+      "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "cSpell.language": "en-GB",
+    "cSpell.words": ["omnisharp"]
   }
 }
