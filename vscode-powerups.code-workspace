@@ -41,5 +41,24 @@
     },
     "cSpell.language": "en-GB",
     "cSpell.words": ["omnisharp"]
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode-remote.remote-containers",
+      "mikestead.dotenv",
+      "github.codespaces",
+      "xabikos.javascriptsnippets",
+      "ms-dotnettools.csharp",
+      "streetsidesoftware.code-spell-checker",
+      "editorconfig.editorconfig",
+      "ms-azuretools.vscode-docker",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "visualstudioexptteam.vscodeintellicode",
+      "orta.vscode-jest",
+      "esbenp.prettier-vscode",
+      "josefpihrt-vscode.roslynator",
+      "redhat.vscode-yaml"
+    ]
   }
 }
