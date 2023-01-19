@@ -20,3 +20,5 @@ Duplicate `.env`, populate secrets.
 
 Run `docker-compose up`.
 Open Workspace, select debug configuration and press F5.
+
+> Click here to go back to [../../README.md](../../README.md)

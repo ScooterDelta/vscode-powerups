@@ -15,3 +15,5 @@ Please ensure that you have the following services installed on your machine:
 ## Getting Started
 
 Open VSCode Dev Container - Press F5.
+
+> Click here to go back to [../../README.md](../../README.md)

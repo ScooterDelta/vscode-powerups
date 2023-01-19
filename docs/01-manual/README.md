@@ -21,3 +21,5 @@ Manual secrets configuration, etc.
 ## Getting Started
 
 Individual `npm install`, `npm run dev` and `dotnet restore` and `dotnet run` commands.
+
+> Click here to go back to [../../README.md](../../README.md)

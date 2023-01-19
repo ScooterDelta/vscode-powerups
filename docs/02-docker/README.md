@@ -20,3 +20,5 @@ Duplicate `.env`, populate secrets.
 
 Run `docker-compose up`.
 Individual `npm install`, `npm run dev` and `dotnet restore` and `dotnet run` commands.
+
+> Click here to go back to [../../README.md](../../README.md)
