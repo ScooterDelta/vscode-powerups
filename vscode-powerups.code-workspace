@@ -19,7 +19,7 @@
       "source.fixAll": true,
       "source.fixAll.markdownlint": false
     },
-    "jest.disabledWorkspaceFolders": ["worker", "vscode-powerups"],
+    "jest.disabledWorkspaceFolders": ["worker", "vscode-powerups", "docs"],
     "omnisharp.useModernNet": true,
     "[csharp]": {
       "editor.defaultFormatter": "ms-dotnettools.csharp"
