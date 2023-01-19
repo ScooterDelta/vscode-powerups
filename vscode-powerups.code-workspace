@@ -58,7 +58,8 @@
       "orta.vscode-jest",
       "esbenp.prettier-vscode",
       "josefpihrt-vscode.roslynator",
-      "redhat.vscode-yaml"
+      "redhat.vscode-yaml",
+      "pomdtr.excalidraw-editor"
     ]
   }
 }

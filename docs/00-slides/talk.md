@@ -1,0 +1,47 @@
+# VSCode Talk
+
+- Introduction
+  - "Fast context switching with VSCode"
+    - Name, role @entelect etc.
+    - No social media's.
+- Disclaimer
+  - This talk is not unbiased - I have picked scenarios where benefits are tangible, and I like VSCode and containers.
+- But Why?
+  - Why context switching as a concern
+    - Context switching slows us down, and can be caused by various things. I have picked a few biased examples for my particular case - such as:
+    - Sometimes the stack is complicated
+      - We work across complex application stacks, starting up every service and dependency can be torturous (microservices can be hard to deal with when developing).
+    - Sometimes we have multiple stacks
+      - Sometimes we need to jump between domains and stacks, with different technologies and dependencies. Keeping track of these and making sure they can all start is difficult.
+    - Sometimes new people join the team
+      - Grads and new team members now suddenly have to learn a new client, domain and tech stack. When everything is thrown in at once, having to figure out how to install RabbitMQ on your Dev machine can suddenly seem an insurmountable task.
+  - Why VSCode
+    - Many people see VSCode as a text editor, but it is much more than that:
+    - VSCode pros
+      - Modern principals and designs
+      - Well supported (Microsoft backed)
+      - Decoupled client and server implementation - this is a pretty key point to what we are going to do later.
+      - Highly customizable
+    - Docker Support
+      - Excellent docker support, both for implementing and using docker - as well as running VSCode runtimes and code servers within Docker.
+- But how?
+  - 5 easy steps
+    - Our "example system" in this case is made up of a next SSR application, talking to a relational PostgresDB. This integrates to a C# "Worker" application for some heavy lifting that integrates via RabbitMQ.
+    - Step 1 - Start with the ugly
+      - I.e. start with a project
+      - We need a starting point, need something to work with
+      - **Swap to VSCode** with live demo of the system showed earlier
+      - Talk through manual setup readme and how complex it is to then individually run additional services
+    - Step 2 - Dockerise
+      - As mentioned earlier - docker (or other Unix Container system) is vital to the improvements we need to make
+      - Containers allow us to isolate and automate the complex dependencies of our system, such as RabbitMQ and PostgreSQL
+      - **Swap to VSCode** and show how easy it is to start the applications - show updated readme.
+    - Step 3 - Introduce a Workspace
+      - VSCode finally makes an appearance
+      - **Swap to VSCode** Show the debugger configuration and starting an application
+    - Step 4 - Containers + Workspace = Dev Container
+      - **Swap to VSCode** Show the 1-click opening of the project from Github in VSCode
+    - Step 5 - Codespaces
+      - **Swap to Github** open development environment in Github on cloud infrastructure
+- Questions + Resources.
+  - Repo and slides are available on Github.
