@@ -1,7 +1,6 @@
-version: '3.1'
+version: "3.8"
 
 services:
-
   mongo:
     image: mongo
     restart: always
@@ -27,9 +26,9 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - pgdata:/var/lib/postgresql/data 
+      - pgdata:/var/lib/postgresql/data
 
 volumes:
-  rabbitdata: 
-  mongodata: 
+  rabbitdata:
+  mongodata:
   pgdata:
