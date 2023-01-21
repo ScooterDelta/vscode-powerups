@@ -1,18 +1,12 @@
 version: "3.8"
 
 services:
-  mongo:
-    image: mongo
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-    volumes:
-      - mongodata:/data/db
-
   rabbitmq:
-    image: rabbitmq
+    image: rabbitmq:management
     restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
     environment:
       RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
@@ -22,6 +16,8 @@ services:
   postgres:
     image: postgres
     restart: always
+    ports:
+      - 5432:5432
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -30,5 +26,4 @@ services:
 
 volumes:
   rabbitdata:
-  mongodata:
   pgdata:
