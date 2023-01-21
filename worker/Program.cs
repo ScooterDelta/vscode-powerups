@@ -1,5 +1,6 @@
 using Messages;
 using Rebus.Config;
+using Rebus.Serialization.Json;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureAppConfiguration((hostingContext, configuration) =>
@@ -23,6 +24,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
             .Transport(t => t.UseRabbitMq(
               hostContext.Configuration.GetValue<string>("RabbitConnectionString"),
               hostContext.Configuration.GetValue<string>("RabbitQueueName")))
+            .Serialization(s => s.UseSystemTextJson())
             .Options(o => o.SetMaxParallelism(5));
         },
         onCreated: bus => bus.Subscribe<Job>()
