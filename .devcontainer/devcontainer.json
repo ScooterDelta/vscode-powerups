@@ -4,7 +4,7 @@
   "name": "C# (.NET) and PostgreSQL",
   "dockerComposeFile": [
     "../docker-compose.yml",
-    "docker-compose.devcontainer.yml"
+    "../docker-compose.devcontainer.yml"
   ],
   "service": "app",
   "workspaceFolder": "/workspaces/vscode-powerups",
@@ -12,7 +12,7 @@
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers/features/node:1": {}
   },
-  "initializeCommand": ["cp example.env .env"]
+  "initializeCommand": ["cp -u example.env .env"]
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
