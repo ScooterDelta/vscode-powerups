@@ -7,7 +7,7 @@
   "compounds": [
     {
       "name": "Debug All (Worker + UI)",
-      "configurations": [".NET Core Launch (web)", "Next.js: debug full stack"]
+      "configurations": [".NET Core Launch (worker)", "Next.js: debug full stack"]
     }
   ]
 }

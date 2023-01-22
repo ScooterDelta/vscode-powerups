@@ -12,7 +12,8 @@
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
     "ghcr.io/devcontainers/features/node:1": {}
   },
-  "initializeCommand": "cp -u .env.example .env"
+  "initializeCommand": "cp -u .env.example .env",
+  "postAttachCommand": "sh -c 'cd worker && dotnet restore' && sh -c 'cd ui && npm install'"
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
