@@ -4,6 +4,8 @@ services:
   app:
     env_file:
       - .env
+    environment:
+      - RabbitConnectionString=amqp://${RABBITMQ_DEFAULT_USER}:${RABBITMQ_DEFAULT_PASS}@rabbitmq
     build:
       # Since this is extending the shared docker-compose.yml above, the context is one level lower
       context: .devcontainer
