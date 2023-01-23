@@ -36,8 +36,9 @@ Please ensure that you have the following services installed on your machine:
 
 ## Commentary
 
-This steps builds on top of the service automation introduced with [Docker](https://docs.docker.com) in the previous step. The workspace brings in quality of life improvements in VSCode, such as intellisense, debugging, testing and extensions.
+This steps builds on top of the service automation introduced with [Docker](https://docs.docker.com) in the [previous step](../02-docker/README.md). The workspace brings in quality of life improvements in VSCode, such as intellisense, debugging, testing and extensions.
 
+It is worth noting that all CLI options are still available to run the application, and this setup uses industry standard configuration files (eslint, tsc, etc.). This ensures that the VScode configuration is not forced, and other tools or IDEs can be used.
 
 ### Debugging
 
