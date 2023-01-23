@@ -5,70 +5,26 @@ exports[`renders homepage unchanged 1`] = `
   <div
     class="container"
   >
-    <main>
+    <main
+      class="main"
+    >
       <h1
         class="title"
       >
-        Welcome to 
-        <a
-          href="https://nextjs.org"
-        >
-          Next.js!
-        </a>
+        Next.js RabbitMQ Integration (VSCode Powerups)
       </h1>
-      <p
-        class="description"
-      >
-        Get started by editing 
-        <code>
-          pages/index.js
-        </code>
-      </p>
       <div
         class="grid"
       >
         <a
           class="card"
-          href="https://nextjs.org/docs"
+          href="/rabbitmq-form"
         >
-          <h3>
-            Documentation →
-          </h3>
+          <h2>
+            Form to Submit Rabbit Message →
+          </h2>
           <p>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://nextjs.org/learn"
-        >
-          <h3>
-            Learn →
-          </h3>
-          <p>
-            Learn about Next.js in an interactive course with quizzes!
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://github.com/vercel/next.js/tree/canary/examples"
-        >
-          <h3>
-            Examples →
-          </h3>
-          <p>
-            Discover and deploy boilerplate example Next.js projects.
-          </p>
-        </a>
-        <a
-          class="card"
-          href="https://vercel.com/new"
-        >
-          <h3>
-            Deploy →
-          </h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
+            Form to test server + client side debugging by sending messages to external applications via RabbitMQ.
           </p>
         </a>
       </div>
@@ -77,11 +33,11 @@ exports[`renders homepage unchanged 1`] = `
       class="footer"
     >
       <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+        href="https://nextjs.org"
         rel="noopener noreferrer"
         target="_blank"
       >
-        Powered by
+        Built with Next.js | Powered by
          
         <span
           class="logo"
