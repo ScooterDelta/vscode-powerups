@@ -16,10 +16,34 @@ Please ensure that you have the following services installed on your machine:
 
 ## Configuration
 
-Manual secrets configuration, etc.
+- Set up RabbitMQ Username and Password and export the following environment variables in the relevant applications
+  - **worker**: `RabbitConnectionString=<insert amqp connection secret>`
+  - **ui**: `RABBITMQ_CONNECTION_URL=<insert amqp connection secret>`
+- Set up Postgres and configure DB Username and Password for connection, export the following environment variables in relevant applications
+  - **ui**: `POSTGRES_USERNAME=<username>`
+  - **ui**: `POSTGRES_PASSWORD=<password>`
 
 ## Getting Started
 
-Individual `npm install`, `npm run dev` and `dotnet restore` and `dotnet run` commands.
+- To start the **Worker** application run the following in `worker/`
+  - `dotnet restore`
+  - `dotnet run`
+    - Or `dotnet watch run` to watch for changes and re-start.
+- To start the **UI** application run the following in `ui/`
+  - `npm install`
+  - `npm build`
+  - `npm start`
+    - Or `npm run dev` to watch for changes and auto-reload
+
+### Testing
+
+- In order to run tests in the **UI** application run the following in `ui/`
+  - `npm test`
+
+## Commentary
+
+This step primarily exists to highlight the complexity in setting up a "raw" environment for development, highlighting the complexity in installing services like [RabbitMQ](https://www.rabbitmq.com) from scratch.
+
+There are also no value added tools available out the box with this approach, and as such you cannot automatically debug, run tests or start applications other than via the CLI.
 
 > Click here to go back to [../../README.md](../../README.md)
