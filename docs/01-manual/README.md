@@ -1,4 +1,4 @@
-# My Awesome App
+# VSCode Powerups - Manual Configuration
 
 Welcome to My Awesome App! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
 
@@ -13,6 +13,8 @@ Please ensure that you have the following services installed on your machine:
   - [Guide for Linux](https://www.rabbitmq.com/install-debian.html).
 - [PostgreSQL](https://www.postgresql.org/)
   - [Downloads](https://www.postgresql.org/download/)
+- [NodeJS](https://nodejs.org/en/download/)
+- [Dotnet](https://dotnet.microsoft.com/en-us/download)
 
 ## Configuration
 
@@ -25,6 +27,7 @@ Please ensure that you have the following services installed on your machine:
 
 ## Getting Started
 
+- Ensure that Postgres and RabbitMQ are configured and running (see [Prerequisites](#prerequisites) and [Configuration](#configuration) above)
 - To start the **Worker** application run the following in `worker/`
   - `dotnet restore`
   - `dotnet run`
