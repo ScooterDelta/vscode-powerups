@@ -13,13 +13,18 @@
     "ghcr.io/devcontainers/features/node:1": {}
   },
   "initializeCommand": "cp -u .env.example .env",
-  "postAttachCommand": "sh -c 'cd worker && dotnet restore' && sh -c 'cd ui && npm install'"
+  "postAttachCommand": "sh -c 'cd worker && dotnet restore' && sh -c 'cd ui && npm install'",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
 
   // Configure tool-specific properties.
   // "customizations": {},
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    }
+  }
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [5000, 5001, 5432],

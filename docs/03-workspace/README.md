@@ -1,6 +1,6 @@
-# My Awesome App
+# VSCode Powerups - VSCode Workspace Configuration
 
-Welcome to My Awesome App! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
+Welcome to VSCode Powerups! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
 
 This is Step 3, keeping our docker configuration, we now have the addition of a VSCode workspace.
 

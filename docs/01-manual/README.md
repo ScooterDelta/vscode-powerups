@@ -1,6 +1,6 @@
 # VSCode Powerups - Manual Configuration
 
-Welcome to My Awesome App! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
+Welcome to VSCode Powerups! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
 
 Unfortunately for you, this is step 1 in the journey - installing and starting everything manually.
 

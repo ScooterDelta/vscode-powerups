@@ -1,6 +1,6 @@
-# My Awesome App
+# VSCode Powerups - Docker Configuration
 
-Welcome to My Awesome App! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
+Welcome to VSCode Powerups! This app shows no real purpose other than to show the usage of different technologies, and how VSCode and Containers can be used to optimise the developer experience.
 
 Welcome to step 2! This step includes the addition of Docker - no need to manually install requisite services.
 
