@@ -25,4 +25,11 @@ The repo has multiple `README.md` documents under the `docs/` folder, each of wh
 
 ## Background
 
-This repo is designed to go alongside a talk for an Entelect Coffee && Code, an internal training talk.
+This repo is designed to go alongside a talk for an Entelect Coffee && Code, an internal training talk. The actual code in this repo is mostly sample code to show basic debug functionality, rather than anything complex. The core focus of this repo is for the Dev Container and Workspace configuration examples.
+
+## Resources
+
+- [Codespaces](https://docs.github.com/en/codespaces/overview)
+- [Github - Introduction to Dev Containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
+- [Microsoft - Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers)
+- [VSCode Workspaces](https://code.visualstudio.com/docs/editor/workspaces)
