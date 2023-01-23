@@ -8,6 +8,8 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@types/amqplib": "^0.10.1",
+    "amqplib": "^0.10.3",
     "next": "latest",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
