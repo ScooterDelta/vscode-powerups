@@ -17,7 +17,7 @@ Please ensure that you have the following services installed on your machine:
 ## Configuration
 
 - Duplicate the root `.env.example` file to make a `.env` (*note*: this file is gitignored to preserve secrets)
-- **Optional**: Customize the secrets in your local `.env` file (*note*: This will require updating default connections in worker and UI)
+  - **Optional**: Customize the secrets in your local `.env` file (*note*: This will require updating default connections in worker and UI)
 
 ## Getting Started
 
