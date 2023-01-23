@@ -2,8 +2,8 @@
 
 - Introduction
   - "Fast context switching with VSCode"
-    - Name, role @entelect etc.
-    - No social media's.
+  - Name, role @entelect etc.
+  - No social media's.
 - Disclaimer
   - This talk is not unbiased - I have picked scenarios where benefits are tangible, and I like VSCode and containers.
 - But Why?
@@ -11,10 +11,13 @@
     - Context switching slows us down, and can be caused by various things. I have picked a few biased examples for my particular case - such as:
     - Sometimes the stack is complicated
       - We work across complex application stacks, starting up every service and dependency can be torturous (microservices can be hard to deal with when developing).
+      - **Example** - Microservices are a great way to decouple modules of an application and scale them as needed
     - Sometimes we have multiple stacks
       - Sometimes we need to jump between domains and stacks, with different technologies and dependencies. Keeping track of these and making sure they can all start is difficult.
+      - **Example** - Current team is working on various shared services and tools across the client, meaning that if there are issues between them we need to be able to easily start up and debug an application.
     - Sometimes new people join the team
       - Grads and new team members now suddenly have to learn a new client, domain and tech stack. When everything is thrown in at once, having to figure out how to install RabbitMQ on your Dev machine can suddenly seem an insurmountable task.
+      - **Example** Joining a new team is quite intense to start off with, between new people, new client and new domain - spending a week installing weblogic, rabbitmq, some or many database instances is painful.
   - Why VSCode
     - Many people see VSCode as a text editor, but it is much more than that:
     - VSCode pros
@@ -24,6 +27,9 @@
       - Highly customizable
     - Docker Support
       - Excellent docker support, both for implementing and using docker - as well as running VSCode runtimes and code servers within Docker.
+- What do we want
+  - One click deployment
+  - Configure our environment in such a way that someone can come in from anywhere, click a single button and have a fully functional dev environment
 - But how?
   - 5 easy steps
     - Our "example system" in this case is made up of a next SSR application, talking to a relational PostgresDB. This integrates to a C# "Worker" application for some heavy lifting that integrates via RabbitMQ.
