@@ -12,8 +12,7 @@ export default function RabbitMQForm() {
 
     // Get data from the form.
     const data = {
-      first: form.first.value as string,
-      last: form.last.value as string,
+      jobNumber: parseFloat(form.jobNumber.value),
     };
 
     // Send the form data to our API and get a response.
@@ -32,7 +31,7 @@ export default function RabbitMQForm() {
     // If server returns the name submitted, that means the form works.
     const result = await response.json();
     alert(
-      `Job Number: '${result.data.jobNumber}', has been submitted with status: '${result.data.messageStatus}`
+      `Job Number: '${result.jobNumber}', has been submitted with status: '${result.messageStatus}`
     );
   };
   return (
@@ -41,7 +40,7 @@ export default function RabbitMQForm() {
 
       <form onSubmit={handleSubmit}>
         <label htmlFor="jobNumber">Job Number</label>
-        <input type="text" id="jobNumber" name="jobNumber" required />
+        <input type="number" id="jobNumber" name="jobNumber" required />
         <button type="submit">Submit</button>
       </form>
     </div>
